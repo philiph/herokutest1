@@ -1,0 +1,10 @@
+<h1>Article: <%= @article.title %></h1>
+
+<p><%= @article.content %></p>
+
+<p class="small">
+  Created: <%= @article.created_at.localtime %>.
+  <br />Modified: <%= @article.updated_at.localtime %>.
+</p>
+
+<p><%= link_to "Edit", edit_article_path(@article) %> | <%= link_to "Delete", article_path(@article), :confirm => 'Are you sure?', :method => :delete %> | <%= link_to "Back", articles_path %></p>
