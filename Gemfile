@@ -23,12 +23,16 @@ gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'
+gem 'thin'
 
 # Deploy with Capistrano
 # gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :production do
+end
 
 group :test do
   gem 'sqlite3'
